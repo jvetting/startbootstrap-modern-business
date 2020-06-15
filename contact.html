@@ -16,6 +16,9 @@
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
 
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -97,18 +100,19 @@
       <!-- Map Column -->
       <div class="col-lg-8 mb-4">
         <!-- Embedded Google Map -->
-        <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+        <!--iframe-- width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.4601560425817!2d-76.59331994664514!3d38.54621066209296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b77881d6cc0731%3A0x7c984cf194321a94!2s135%20W%20Dares%20Beach%20Rd%2C%20Prince%20Frederick%2C%20MD%2020678!5e0!3m2!1sen!2sus!4v1592164405311!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
       <!-- Contact Details Column -->
       <div class="col-lg-4 mb-4">
         <h3>Contact Details</h3>
         <p>
-          3481 Melrose Place
-          <br>Beverly Hills, CA 90210
+          135 W. Dares Beach Road
+          <br>Prince Frederick, MD 20678
           <br>
         </p>
         <p>
-          <abbr title="Phone">P</abbr>: (123) 456-7890
+          <abbr title="Phone">P</abbr>: (410) 535-8661
         </p>
         <p>
           <abbr title="Email">E</abbr>:
@@ -130,23 +134,45 @@
         <form name="sentMessage" id="contactForm" novalidate>
           <div class="control-group form-group">
             <div class="controls">
+              <span class="input-group-addon"><i class="fa fa-user"></i></span>
               <label>Full Name:</label>
-              <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+              <input type="text" class="form-control" id="name" placeholder="First Last" required data-validation-required-message="Please enter your name.">
               <p class="help-block"></p>
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
+              <span class="input-group-addon"><i class="fa fa-phone"></i></span>
               <label>Phone Number:</label>
-              <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+              <input type="tel" class="form-control" id="phone" placeholder="(___)___-____" required data-validation-required-message="Please enter your phone number.">
             </div>
           </div>
+
           <div class="control-group form-group">
             <div class="controls">
+              <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
               <label>Email Address:</label>
-              <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+              <input type="email" class="form-control" id="email" placeholder="example@example.com" required data-validation-required-message="Please enter your email address.">
             </div>
           </div>
+
+          <div>
+            <label>Reason for contact:</label>
+            <select class="custom-select" id="service-exist">
+              <option selected>I need help with...</option>
+              <option value="Existing">My existing service</option>
+              <option value="New">Contracting a new service</option>
+            </select>
+          </div>
+          <div>
+            <select class="custom-select" id="service-type">
+              <option selected>Type of service...</option>
+              <option value="Mosquito">Mosquito control</option>
+              <option value="Rodent">Rodent control</option>
+              <option value="Termite">Termite control</option>
+            </select>
+          </div>
+
           <div class="control-group form-group">
             <div class="controls">
               <label>Message:</label>

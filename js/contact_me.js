@@ -11,7 +11,15 @@ $(function() {
       var name = $("input#name").val();
       var email = $("input#email").val();
       var phone = $("input#phone").val();
-      var message = $("textarea#message").val();
+      //----------------------------------------------------------------------------------------------------------------
+      var exists = $("select#service-exist").val();
+      var type = $("select#service-type").val();
+      console.log(exists);
+      console.log(type);
+      var header = exists + " " + type + "\n" + "Additional notes: " + "\n";
+      //----------------------------------------------------------------------------------------------------------------
+      var message = header + $("textarea#message").val();//$("textarea#message").val();
+      console.log(message);
       var firstName = name; // For Success/Failure Message
       // Check for white space in name for Success/Fail message
       if (firstName.indexOf(' ') >= 0) {
