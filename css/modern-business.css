@@ -20,3 +20,11 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.nav-item {
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+.nav-contact {
+  color: #FCF774 !important;
+}
