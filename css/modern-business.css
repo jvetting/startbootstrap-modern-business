@@ -5,6 +5,14 @@
  */
 body {
   padding-top: 56px;
+
+  /*
+  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+   */
 }
 
 .carousel-item {
@@ -90,3 +98,59 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+
+
+.flex-direction-nav li {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  top: 0;
+}
+
+.flex-direction-nav li:first-child {
+  left: 0;
+}
+
+.flex-direction-nav li:last-child {
+  right: 0;
+}
+
+.flex-direction-nav li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+
+  transition: background-color 0.2s;
+}
+
+.flex-direction-nav li a::before, .flex-direction-nav li a::after {
+  /* left and right arrows in css only */
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 13px;
+  background-color: white;
+}
+
+.flex-direction-nav li a::before {
+  transform: translateY(-35px) rotate(45deg);
+}
+
+.flex-direction-nav li a::after {
+  transform: translateY(-27px) rotate(-45deg);
+}
+
+.flex-direction-nav li:last-child a::before {
+  transform: translateY(-35px) rotate(-45deg);
+}
+
+.flex-direction-nav li:last-child a::after {
+  transform: translateY(-27px) rotate(45deg);
+}
