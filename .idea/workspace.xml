@@ -32,7 +32,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07bd90fa-c4c8-409a-967d-e1636b757089" name="Default Changelist" comment="" />
+    <list default="true" id="07bd90fa-c4c8-409a-967d-e1636b757089" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/modern-business.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/modern-business.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/contact_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/contact_me.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail/contact_me.php" beforeDir="false" afterPath="$PROJECT_DIR$/mail/contact_me.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +50,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -86,6 +95,8 @@
       <workItem from="1592417249061" duration="902000" />
       <workItem from="1592418201491" duration="2333000" />
       <workItem from="1592420824004" duration="3779000" />
+      <workItem from="1593104323906" duration="6361000" />
+      <workItem from="1593114134625" duration="5783000" />
     </task>
     <servers />
   </component>
@@ -97,7 +108,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -109,13 +126,17 @@
       <screen x="-1920" y="-109" width="1920" height="1040" />
     </state>
     <state x="-1180" y="165" key="FileChooserDialogImpl/0.0.1366.728/-1920.-109.1920.1040@-1920.-109.1920.1040" timestamp="1592246633965" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1593109332147">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1593109332147" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/contact_me.js</url>
-          <line>62</line>
+          <line>95</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

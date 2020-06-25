@@ -158,22 +158,25 @@
 
           <!-- address-line1 input-->
           <div class="control-group form-group">
-            <label class="control-label">Address Line 1:</label>
             <div class="controls">
-              <input id="address-line1" name="address-line1" type="text" placeholder="address line 1"
-                     class="input-xlarge">
-              <p class="help-block">Street address, P.O. box, company name, c/o</p>
+              <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              <label>Address line 1:</label>
+              <input type="text" class="form-control" id="address-line1" placeholder="address line 1" required data-validation-required-message="Please enter line 1 of your address.">
+              <p class="help-block"></p>
             </div>
           </div>
+
           <!-- address-line2 input-->
-          <div class="control-group">
-            <label class="control-label">Address Line 2:</label>
+          <div class="control-group form-group">
             <div class="controls">
-              <input id="address-line2" name="address-line2" type="text" placeholder="address line 2"
-                     class="input-xlarge">
-              <p class="help-block">Apartment, suite , unit, building, floor, etc.</p>
+              <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              <label>Address line 2:</label>
+              <input type="text" class="form-control" id="address-line2" placeholder="address line 2">
+              <!--input type="text" class="form-control" id="address-line2" placeholder="address line 2" required data-validation-required-message="Please enter line 2 of your address."-->
+              <p class="help-block"></p>
             </div>
           </div>
+
           <!-- city input-->
           <div class="control-group">
             <label class="control-label">City / Town:</label>
@@ -211,7 +214,7 @@
           </div>
           <div class="row">
             <div class="col-sm-6">
-              <select class="custom-select" id="service-type-pest">
+              <select class="custom-select" id="type">
                   <option selected>Type of pest...</option>
                   <option value="Ant">Ant control</option>
                   <option value="Bed bug">Bed bug control</option>

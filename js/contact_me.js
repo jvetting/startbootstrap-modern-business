@@ -13,12 +13,25 @@ $(function() {
       var phone = $("input#phone").val();
       //----------------------------------------------------------------------------------------------------------------
       var exists = $("select#service-exist").val();
-      var type = $("select#service-type").val();
+      var type = $("select#type").val();
+      var address_line1 = $("input#address-line1").val();
+      var address_line2 = $("input#address-line2").val();
+      var city = $("input#city").val();
+      var region = $("select#region").val();
+      var postal_code = $("input#postal-code").val();
+      console.log(name);
+      console.log(email);
+      console.log(phone);
+      console.log(address_line1);
+      console.log(address_line2);
+      console.log(city);
+      console.log(region);
+      console.log(postal_code);
       console.log(exists);
       console.log(type);
-      var header = exists + " " + type + "\n" + "Additional notes: " + "\n";
+      //var message = header + $("textarea#message").val();//$("textarea#message").val();
       //----------------------------------------------------------------------------------------------------------------
-      var message = header + $("textarea#message").val();//$("textarea#message").val();
+      var message = $("textarea#message").val();
       console.log(message);
       var firstName = name; // For Success/Failure Message
       // Check for white space in name for Success/Fail message
@@ -27,6 +40,7 @@ $(function() {
       }
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
+      /*
       $.ajax({
         url: "././mail/contact_me.php",
         type: "POST",
@@ -36,6 +50,25 @@ $(function() {
           email: email,
           message: message
         },
+      */
+
+      $.ajax({
+        url: "././mail/contact_me.php",
+        type: "POST",
+        data: {
+          name: name,
+          phone: phone,
+          email: email,
+          address_line1: address_line1,
+          //address_line2: address_line2,
+          city: city,
+          region: region,
+          postal_code: postal_code,
+          exists: exists,
+          type: type,
+          message: message
+        },
+
         cache: false,
         success: function() {
           // Success message
