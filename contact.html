@@ -132,118 +132,189 @@
         <h3>Schedule an Appointment</h3>
         <p66>Just follow the forms and we'll get back to you with a time available in one business day!</p66>
         <form name="sentMessage" id="contactForm" novalidate>
-          <div class="control-group form-group">
-            <div class="controls">
-              <span class="input-group-addon"><i class="fa fa-user"></i></span>
-              <label>Full Name:</label>
-              <input type="text" class="form-control" id="name" placeholder="First Last" required data-validation-required-message="Please enter your name.">
-              <p class="help-block"></p>
+          <div class="row">
+            <div class="col-6 col-md-4">
+              <div class="control-group form-group">
+                <div class="controls">
+                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                  <label>Full Name:</label>
+                  <input type="text" class="form-control" id="name" placeholder="First Last" required data-validation-required-message="Please enter your name.">
+                  <p class="help-block"></p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-              <label>Phone Number:</label>
-              <input type="tel" class="form-control" id="phone" placeholder="(___)___-____" required data-validation-required-message="Please enter your phone number.">
+            <div class="col-6 col-md-4">
+              <div class="control-group form-group">
+                <div class="controls">
+                  <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                  <label>Phone Number:</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="(___)___-____" required data-validation-required-message="Please enter your phone number.">
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="control-group form-group">
-            <div class="controls">
-              <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-              <label>Email Address:</label>
-              <input type="email" class="form-control" id="email" placeholder="example@example.com" required data-validation-required-message="Please enter your email address.">
+            <div class="col-6 col-md-4">
+              <div class="control-group form-group">
+                <div class="controls">
+                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <label>Email Address:</label>
+                  <input type="email" class="form-control" id="email" placeholder="example@example.com" required data-validation-required-message="Please enter your email address.">
+                </div>
+              </div>
             </div>
           </div>
+          <!-- /row 1 -->
 
-          <!-- address-line1 input-->
-          <div class="control-group form-group">
-            <div class="controls">
-              <span class="input-group-addon"><i class="fa fa-user"></i></span>
-              <label>Address line 1:</label>
-              <input type="text" class="form-control" id="address-line1" placeholder="address line 1" required data-validation-required-message="Please enter line 1 of your address.">
-              <p class="help-block"></p>
+          <div class="row">
+            <!-- address-line1 input-->
+            <div class="col-sm-8">
+              <div class="control-group form-group">
+                <div class="controls">
+                  <span class="input-group-addon"><i class="fa fa-home"></i></span>
+                  <label>Address line 1:</label>
+                  <input type="text" class="form-control" id="address-line1" placeholder="address line 1" required data-validation-required-message="Please enter line 1 of your address.">
+                  <p class="help-block"></p>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <!-- address-line2 input-->
-          <div class="control-group form-group">
-            <div class="controls">
-              <span class="input-group-addon"><i class="fa fa-user"></i></span>
-              <label>Address line 2:</label>
-              <input type="text" class="form-control" id="address-line2" placeholder="address line 2">
-              <!--input type="text" class="form-control" id="address-line2" placeholder="address line 2" required data-validation-required-message="Please enter line 2 of your address."-->
-              <p class="help-block"></p>
+            <!-- address-line2 input-->
+            <div class="col-sm-4">
+              <div class="control-group form-group">
+                <div class="controls">
+                  <span class="input-group-addon"><i class="fa fa-home"></i></span>
+                  <label>Address line 2:</label>
+                  <input type="text" class="form-control" id="address-line2" placeholder="address line 2">
+                  <!--input type="text" class="form-control" id="address-line2" placeholder="address line 2" required data-validation-required-message="Please enter line 2 of your address."-->
+                  <p class="help-block"></p>
+                </div>
+              </div>
             </div>
           </div>
+          <!-- /row 2 -->
 
           <!-- city input-->
-          <div class="control-group">
-            <label class="control-label">City / Town:</label>
-            <div class="controls">
-              <input id="city" name="city" type="text" placeholder="city" class="input-xlarge">
-              <p class="help-block"></p>
+          <div class="row">
+            <div class="col-6 col-md-4">
+              <div class="control-group form-group">
+                <div class="controls">
+                  <span class="input-group-addon"><i class="fa fa-map-pin"></i></span>
+                  <label class="control-label">City / Town:</label>
+                  <input type="text" class="form-control" id="city" placeholder="city">
+                  <p class="help-block"></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- region input-->
+            <div class="col-6 col-md-4">
+              <div class="control-group form-group">
+                <div class="controls">
+                  <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+                  <label class="control-label">State / Province / Region:</label>
+                  <select class="custom-select" id="region">
+                    <option value="MD" selected>Maryland</option>
+                    <option value="DC">Washington DC</option>
+                    <option value="VA">Virginia</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- postal-code input-->
+            <div class="col-6 col-md-4">
+              <div class="control-group form-group">
+                <div class="controls">
+                  <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+                  <label class="control-label">Zip / Postal Code:</label>
+                    <input type="text" class="form-control" id="postal-code" placeholder="zip or postal code">
+                    <p class="help-block"></p>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- region input-->
-          <div>
-            <label class="control-label">State / Province / Region:</label>
-            <select class="custom-select" id="region">
-              <option value="MD" selected>Maryland</option>
-              <option value="DC">Washington DC</option>
-              <option value="VA">Virginia</option>
-            </select>
-          </div>
-          <!-- postal-code input-->
-          <div class="control-group">
-            <label class="control-label">Zip / Postal Code:</label>
-            <div class="controls">
-              <input id="postal-code" name="postal-code" type="text" placeholder="zip or postal code"
-                     class="input-xlarge">
-              <p class="help-block"></p>
-            </div>
-          </div>
+          <!-- /row 3 -->
+
           <!-- dropdowns -->
-          <div>
-            <label>Reason for contact:</label>
-            <select class="custom-select" id="service-exist">
-              <option selected>I need help with...</option>
+          <!--div>
+            <label>Service Information:</label>
+            <div class="dropdown" id="type">
+              <button class="btn btn-secondary dropdown-toggle" id="type-trap" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Trapping
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <h6 class="dropdown-header">Pest control</h6>
+                <button class="dropdown-item" type="button" value="Ant">Ant control</button>
+                <button class="dropdown-item" type="button" value="Bed bug">Bed bug control</button>
+                <button class="dropdown-item" type="button" value="Cockroach">Cockroach</button>
+                <button class="dropdown-item" type="button" value="Fly">Fly</button>
+                <button class="dropdown-item" type="button" value="Mosquito">Mosquito</button>
+                <button class="dropdown-item" type="button" value="Rodent">Rodent control</button>
+                <button class="dropdown-item" type="button" value="Stinging pest">Stinging pest</button>
+                <button class="dropdown-item" type="button" value="Termite control">Termite control</button>
+
+                <div class="dropdown-divider"></div>
+                <h6 class="dropdown-header">Animal trapping</h6>
+                <button class="dropdown-item" type="button" value="Bat">Bat</button>
+                <button class="dropdown-item" type="button" value="Beaver">Beaver</button>
+                <button class="dropdown-item" type="button" value="Coyote">Coyote trapping</button>
+                <button class="dropdown-item" type="button" value="Fox">Fox trapping</button>
+                <button class="dropdown-item" type="button" value="Opossum">Opossum trapping</button>
+                <button class="dropdown-item" type="button" value="Raccoon">Raccoon trapping</button>
+                <button class="dropdown-item" type="button" value="Skunk">Skunk trapping</button>
+
+                <button class="dropdown-item" type="button" value="Black snake">Black snake trapping</button>
+                <button class="dropdown-item" type="button" value="Copperhead snake">Copperhead trapping</button>
+                <button class="dropdown-item" type="button" value="Garter snake">Garter snake trapping</button>
+                <button class="dropdown-item" type="button" value="Water snake">Water snake trapping</button>
+              </div>
+            </div>
+          </div-->
+
+          <label>Reason for contact:</label>
+          <div class="row">
+            <div class="col-4">
+            <select class="custom-select" id="exists">
+              <option value="" disabled selected>Select your option</option>
               <option value="Existing">My existing service</option>
               <option value="New">Contracting a new service</option>
             </select>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
+            </div>
+            <div class="col-8">
               <select class="custom-select" id="type">
-                  <option selected>Type of pest...</option>
-                  <option value="Ant">Ant control</option>
-                  <option value="Bed bug">Bed bug control</option>
-                  <option value="Cockroach">Cockroach control</option>
-                  <option value="Fly">Fly control</option>
-                  <option value="Mosquito">Mosquito control</option>
-                  <option value="Rodent">Rodent control</option>
-                  <option value="Stinging pest">Stinging pest control</option>
-                  <option value="Termite">Termite control</option>
-              </select>
-            </div>
-            <div class="col-sm-6">
-              <select class="custom-select" id="service-type-trap">
-                  <option selected>Type of trapping...</option>
-                  <option value="Bat">Bat trapping</option>
-                  <option value="Beaver">Beaver trapping</option>
-                  <option value="Coyote">Coyote trapping</option>
-                  <option value="Fox">Fox trapping</option>
-                  <option value="Opossum">Opossum trapping</option>
-                  <option value="Raccoon">Raccoon trapping</option>
-                  <option value="Skunk">Skunk trapping</option>
+                <option value="" disabled selected>Select your pest</option>
 
-                  <option value="Black snake">Black snake trapping</option>
-                  <option value="Copperhead">Copperhead trapping</option>
-                  <option value="Garter snake">Garter snake trapping</option>
-                  <option value="Water snake">Water snake trapping</option>
+                <optgroup label="Pests">
+                <option value="Ant">Ant control</option>
+                <option value="Bed bug">Bed bug control</option>
+                <option value="Cockroach">Cockroach control</option>
+                <option value="Fly">Fly control</option>
+                <option value="Mosquito">Mosquito control</option>
+                <option value="Rodent">Rodent control</option>
+                <option value="Stinging pest">Stinging pest control</option>
+                <option value="Termite">Termite control</option>
+                </optgroup>
+
+                <optgroup label="Animal Trapping">
+                <option value="Bat">Bat trapping</option>
+                <option value="Beaver">Beaver trapping</option>
+                <option value="Coyote">Coyote trapping</option>
+                <option value="Fox">Fox trapping</option>
+                <option value="Opossum">Opossum trapping</option>
+                <option value="Raccoon">Raccoon trapping</option>
+                <option value="Skunk">Skunk trapping</option>
+                </optgroup>
+
+                <optgroup label="Snake Trapping">
+                <option value="Black snake">Black snake trapping</option>
+                <option value="Copperhead">Copperhead trapping</option>
+                <option value="Garter snake">Garter snake trapping</option>
+                <option value="Water snake">Water snake trapping</option>
+                </optgroup>
               </select>
             </div>
           </div>
+
           <div class="control-group form-group">
             <div class="controls">
               <label>Additional notes:</label>
@@ -258,6 +329,24 @@
 
     </div>
     <!-- /.row -->
+
+    <!-- Feedback form -->
+    <div class="container-fluid" style="background: dodgerblue">
+      <div class="row">
+        <div class="col-6 col-sm-4">
+          <p class="text-white m-0">Feedback</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary"><i class="fa fa-star"></i>Left</button>
+            <button type="button" class="btn btn-secondary">Left</button>
+            <button type="button" class="btn btn-secondary">Left</button>
+            <button type="button" class="btn btn-secondary">Middle</button>
+            <button type="button" class="btn btn-secondary">Right</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
   <!-- /.container -->

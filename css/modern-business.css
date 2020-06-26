@@ -174,13 +174,16 @@ body {
    */
 }
 p {
+  /*
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #000;
+   */
 }
 .btn {
+  /*
   color: #000;
   font-weight: bold;
-
+  */
 }
 
 

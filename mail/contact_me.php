@@ -1,4 +1,3 @@
-
 <?php
 // Check for empty fields
 if(empty($_POST['name'])){echo "Name";}
@@ -12,6 +11,7 @@ if(empty($_POST['postal_code'])){echo "Postal code";}
 if(empty($_POST['type'])){echo "Type";}
 if(empty($_POST['exists'])){echo "Exists";}
 if(empty($_POST['message'])){echo "Message";}
+if(empty($_POST['ticket'])){echo "Ticket";}
 
 if(empty($_POST['name'])      ||
    empty($_POST['phone'])     ||
@@ -23,6 +23,7 @@ if(empty($_POST['name'])      ||
    empty($_POST['type']) ||
    empty($_POST['exists']) ||
    empty($_POST['message'])   ||
+    empty($_POST['ticket'])   ||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
    echo "No arguments Provided!";
@@ -40,20 +41,45 @@ $postal_code = strip_tags(htmlspecialchars($_POST['postal_code']));
 $type = strip_tags(htmlspecialchars($_POST['type']));
 $exists = strip_tags(htmlspecialchars($_POST['exists']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
+$ticket = strip_tags(htmlspecialchars($_POST['ticket']));
 
 // Create the email and send the message
 $to = 'jvetting@iastate.edu'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "Website Contact Form:  $name";
-$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\n
-Address line 1: $address_line1\n\n
-City: $city\n\n
-Region: $region\n\n
-Zip code: $postal_code\n\n
-Service type: $type\n\n
-State of service: $exists\n\n
+$email_subject = "Online Appointment Request: #$ticket";
+$email_body = "A client has requested a service.\n\n"."Here are the details:\n\n
+Name: $name\n
+Email: $email_address\n
+Phone: $phone\n
+Address line 1: $address_line1\n
+City: $city\n
+Region: $region\n
+Zip code: $postal_code\n
+Service type: $type\n
+State of service: $exists\n
 Message:\n$message";
 $headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
+
+
+// Create and send a confirmation email to client
+$to = $email_address; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$email_subject = "Calvert Exterminators: Online Appointment Request Confirmation";
+$email_body = "Your service request has been sent! We will reply within 2 business days!\n\n"."Here are the details:\n\n
+Ticket#: $ticket\n
+Name: $name\n
+Email: $email_address\n
+Phone: $phone\n
+Address line 1: $address_line1\n
+City: $city\n
+Region: $region\n
+Zip code: $postal_code\n
+Service type: $type\n
+State of service: $exists\n
+Message:\n$message";
+$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers .= "Reply-To: jvetting@iastate.edu";
+mail($to,$email_subject,$email_body,$headers);
+
 return true;
 ?>

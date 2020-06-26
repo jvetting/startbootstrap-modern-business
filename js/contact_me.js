@@ -12,7 +12,7 @@ $(function() {
       var email = $("input#email").val();
       var phone = $("input#phone").val();
       //----------------------------------------------------------------------------------------------------------------
-      var exists = $("select#service-exist").val();
+      var exists = $("select#exists").val();
       var type = $("select#type").val();
       var address_line1 = $("input#address-line1").val();
       var address_line2 = $("input#address-line2").val();
@@ -29,6 +29,10 @@ $(function() {
       console.log(postal_code);
       console.log(exists);
       console.log(type);
+
+      var ticket = Math.floor((Math.random() * 10000) + 1);
+      console.log(ticket);
+
       //var message = header + $("textarea#message").val();//$("textarea#message").val();
       //----------------------------------------------------------------------------------------------------------------
       var message = $("textarea#message").val();
@@ -66,7 +70,8 @@ $(function() {
           postal_code: postal_code,
           exists: exists,
           type: type,
-          message: message
+          message: message,
+          ticket: ticket
         },
 
         cache: false,
