@@ -337,12 +337,12 @@
           <p class="text-white m-0">Feedback</p>
         </div>
         <div class="col-6 col-md-4">
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary"><i class="fa fa-star"></i>Left</button>
-            <button type="button" class="btn btn-secondary">Left</button>
-            <button type="button" class="btn btn-secondary">Left</button>
-            <button type="button" class="btn btn-secondary">Middle</button>
-            <button type="button" class="btn btn-secondary">Right</button>
+          <div class="btn-group" role="group" aria-label="Basic example" id="feedback">
+            <button type="button" class="btn btn-feedback" id="one-star"><i class="fa fa-star"></i></button>
+            <button type="button" class="btn btn-feedback" id="two-star"><i class="fa fa-star"></i></button>
+            <button type="button" class="btn btn-feedback" id="three-star"><i class="fa fa-star"></i></button>
+            <button type="button" class="btn btn-feedback" id="four-star"><i class="fa fa-star"></i></button>
+            <button type="button" class="btn btn-feedback" id="five-star"><i class="fa fa-star"></i></button>
           </div>
         </div>
       </div>
@@ -350,6 +350,23 @@
 
   </div>
   <!-- /.container -->
+
+  <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("feedback");
+    var btns = header.getElementsByClassName("btn btn-feedback");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("btn btn-feedback active");
+        if (current.length > 0) {
+          current[0].className = current[0].className.replace(" active", "");
+        }
+        this.className += " active";
+        alert(this.className);
+      });
+    }
+  </script>
+
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
