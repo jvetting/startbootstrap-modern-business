@@ -175,12 +175,15 @@ body {
   padding-right: 25px;
    */
 }
-p {
-  /*
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  color: #000;
-   */
+
+h1.thick {
+  font-weight:bold;
 }
+
+h3.thick {
+  font-weight:bold;
+}
+
 .btn {
   /*
   color: #000;
