@@ -39,6 +39,29 @@ body {
   color: #ffc107 !important;
   background-color: black;
   border: solid #ffc107;
+
+  font-size: 30px;
+  font-weight: bold;
+
+  padding-top: 25px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+/*
+.carousel-small {
+  width:320px;
+  height:150px;
+}
+*/
+.carousel-item-small {
+  height: 10vh;
+  min-height: 140px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .custom-select {

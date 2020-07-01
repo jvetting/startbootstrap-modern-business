@@ -35,9 +35,8 @@
     <list default="true" id="07bd90fa-c4c8-409a-967d-e1636b757089" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/modern-business.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/modern-business.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fly.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mosquitoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/mosquitoes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rodents.html" beforeDir="false" afterPath="$PROJECT_DIR$/rodents.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +146,10 @@
       <screen x="-1920" y="-109" width="1920" height="1040" />
     </state>
     <state x="-1180" y="165" key="FileChooserDialogImpl/0.0.1366.728/-1920.-109.1920.1040@-1920.-109.1920.1040" timestamp="1592246633965" />
+    <state x="936" y="330" key="run.anything.popup" timestamp="1593640504548">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="936" y="330" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1593640504548" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1593109332147">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
