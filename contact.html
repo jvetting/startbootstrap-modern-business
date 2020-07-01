@@ -337,12 +337,12 @@
           <p class="text-white m-0">Feedback</p>
         </div>
         <div class="col-6 col-md-4">
-          <div class="btn-group" role="group" aria-label="Basic example" id="feedback">
-            <button type="button" class="btn btn-feedback" id="one-star"><i class="fa fa-star"></i></button>
-            <button type="button" class="btn btn-feedback" id="two-star"><i class="fa fa-star"></i></button>
-            <button type="button" class="btn btn-feedback" id="three-star"><i class="fa fa-star"></i></button>
-            <button type="button" class="btn btn-feedback" id="four-star"><i class="fa fa-star"></i></button>
-            <button type="button" class="btn btn-feedback" id="five-star"><i class="fa fa-star"></i></button>
+          <div class="btn-group" role="group" aria-label="Feedback" id="feedback">
+            <button type="button" class="btn btn-feedback" id="star-1"><i class="fa fa-star"></i></button>
+            <button type="button" class="btn btn-feedback" id="star-2"><i class="fa fa-star"></i></button>
+            <button type="button" class="btn btn-feedback" id="star-3"><i class="fa fa-star"></i></button>
+            <button type="button" class="btn btn-feedback" id="star-4"><i class="fa fa-star"></i></button>
+            <button type="button" class="btn btn-feedback" id="star-5"><i class="fa fa-star"></i></button>
           </div>
         </div>
       </div>
@@ -355,14 +355,54 @@
     // Add active class to the current button (highlight it)
     var header = document.getElementById("feedback");
     var btns = header.getElementsByClassName("btn btn-feedback");
+    console.log("btns length:"+btns.length);
     for (var i = 0; i < btns.length; i++) {
+      console.log(i)
       btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("btn btn-feedback active");
+        var current=this;
+        console.log("current:"+current.id);
+        var inactive = document.getElementsByClassName("btn btn-feedback");
+        var active = document.getElementsByClassName("btn btn-feedback active");
+
+        //console.log("id:"+this.id);
+
+        console.log("inactive length:"+inactive.length);
+        console.log("active length:"+active.length);
+
+        //if(current.length>0){
+          var rating = this.id.charAt(this.id.length-1);
+
+          console.log("rating:"+rating);
+
+          for(var i = 0; i < inactive.length; i++) {
+
+            if (i < rating) {
+              inactive[i].className = "btn btn-feedback active";
+            } else {
+              inactive[i].className = "btn btn-feedback";
+              //active[i].className = "btn btn-feedback";
+            }
+
+
+            console.log(i);
+            console.log(inactive[i].id + ":" +inactive[i].className);
+
+            /*
+          for(var i = 0; i < current.length; i++){
+            alert(current[i].className);
+          }
+          */
+          }
+        //}
+
+        /*
         if (current.length > 0) {
           current[0].className = current[0].className.replace(" active", "");
         }
         this.className += " active";
-        alert(this.className);
+
+         */
+        //alert(this.className);
       });
     }
   </script>

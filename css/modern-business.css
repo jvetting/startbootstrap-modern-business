@@ -29,6 +29,7 @@ body {
   /*margin-bottom: 30px;*/
   margin-bottom: 0px;
 }
+
 /*
 .nav-item {
   font-family: Impact, Charcoal, sans-serif;
@@ -100,7 +101,15 @@ body {
 }
 
 .btn-feedback:active {
-  background-color: red;
+  background-color: greenyellow;
+}
+
+.btn-feedback.active {
+  background-color: greenyellow;
+}
+
+.btn-feedback:focus {
+  background-color: greenyellow;
 }
 
 .flex-direction-nav li {
@@ -191,8 +200,15 @@ h3.thick {
   */
 }
 
-
-
+/*
+.icon {
+  background: url('Willie.jpg');
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+<span class='icon'></span>
+*/
 
 
 .sampleContent {

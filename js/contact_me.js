@@ -30,7 +30,13 @@ $(function() {
       console.log(exists);
       console.log(type);
 
-      var ticket = Math.floor((Math.random() * 10000) + 1);
+      //Ticket format: year-month-day/short_uid
+      //uid format: First initial + last intial + random num b/w 0-9 ex:'JV'
+      //random num possibilites: (26^2)*10 ~ 6,760 unique combos a day
+      var date = new Date();
+      var name_arr = name.split(" ");
+      var uid = name_arr[0].substring(0,1)+name_arr[1].substring(0,1)+(Math.floor(Math.random() * (9 - 0 + 1)) + 0);
+      var ticket = date.getFullYear()+"-"+date.getMonth()+"-"+date.getDay()+"/"+uid;
       console.log(ticket);
 
       //var message = header + $("textarea#message").val();//$("textarea#message").val();
