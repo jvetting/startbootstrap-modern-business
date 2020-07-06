@@ -257,3 +257,11 @@ h3.thick {
   height: 50px;
   border-radius: 50%;
 }
+
+.rounded-circle-custom {
+  vertical-align: middle;
+  horiz-align: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
