@@ -41,7 +41,9 @@ body {
   border: solid #ffc107;
 
   font-size: 30px;
-  font-weight: bold;
+
+
+  font-family: Arial Black;
 
   /* PADDING TOO BIG FOR MOBILE. NEEDS TO CHANGE.*/
   /*
@@ -127,15 +129,15 @@ body {
 }
 
 .btn-feedback:active {
-  background-color: greenyellow;
+  background-color: limegreen;
 }
 
 .btn-feedback.active {
-  background-color: greenyellow;
+  background-color: limegreen;
 }
 
 .btn-feedback:focus {
-  background-color: greenyellow;
+  background-color: limegreen;
 }
 
 .flex-direction-nav li {

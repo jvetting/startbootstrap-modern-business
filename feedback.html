@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Feedback</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                        <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
+                        <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
+                        <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
+                        <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
+                        <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                        <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
+                        <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+                        <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Other Pages
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                        <a class="dropdown-item" href="full-width.html">Full Width Page</a>
+                        <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+                        <a class="dropdown-item" href="faq.html">FAQ</a>
+                        <a class="dropdown-item" href="404.html">404</a>
+                        <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Contact
+        <small>Feedback</small>
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Feedback</li>
+    </ol>
+
+    <!-- Content Row -->
+    <div class="row">
+        <div class="col">
+            <h3 class="my-4" style="font-family: Arial Black; color:dodgerblue">YOUR INPUT MATTERS</h3>
+            <a>Here at Calvert Exterminators, we value every bit of feedback we can gather from our clients and community.
+                This page allows our clients and community to directly voice their opinions, from a simple 5 star rating to a detailed explanation.
+                We are glad to hear how our service has helped you or how it could be improved further, whether it be our pest control or
+                website.
+            </a>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Contact Form -->
+    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <div class="row">
+        <div class="col-lg-8 mb-4">
+            <h3>Send us your feedback</h3>
+            <p66>Please include your email if you would like us to contact you.</p66>
+            <form name="sentMessage" id="feedbackForm" novalidate>
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <label>Email Address (optional):</label>
+                                <input type="email" class="form-control" id="email" placeholder="example@example.com" required data-validation-required-message="Please enter your email address.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /row 1 -->
+
+                <span class="input-group-addon"><i class="fa fa-commenting"></i></span>
+                <label>How would you rate your experience?</label>
+                <!-- Feedback form -->
+                <div class="container-fluid" style="background: dodgerblue">
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <div class="btn-group" role="group" aria-label="Feedback" id="feedback">
+                                <button type="button" class="btn btn-feedback" id="star-1"><i class="fa fa-star"></i></button>
+                                <button type="button" class="btn btn-feedback" id="star-2"><i class="fa fa-star"></i></button>
+                                <button type="button" class="btn btn-feedback" id="star-3"><i class="fa fa-star"></i></button>
+                                <button type="button" class="btn btn-feedback" id="star-4"><i class="fa fa-star"></i></button>
+                                <button type="button" class="btn btn-feedback" id="star-5"><i class="fa fa-star"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Additional notes:</label>
+                        <textarea rows="10" cols="100" class="form-control" id="feedbackMessage" required data-validation-required-message="Please enter your additional notes" maxlength="999" style="resize:none"></textarea>
+                    </div>
+                </div>
+
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <input type="checkbox" class="form-check-input" id="confirmation" required data-validation-required-message="We require your consent to contact you further.">
+                        <label class="form-check-label" for="confirmation" style="font-family: Arial Black; color:black">Yes, Calvert Exterminators may contact me</label>
+                    </div>
+                    <a>
+                        By submitting this request, I validate that I am 18 years of age or older. Additionally, I give Calvert Exterminators permission to call or text me at the number provided regarding
+                        Calvert Exterminators services using automated technology.
+                        I understand my consent is not a condition of purchase.
+                        Commercial customer? Call (410) 535-8661
+                    </a>
+                </div>
+
+                <div id="success"></div>
+                <!-- For success/fail messages -->
+                <button type="submit" class="btn btn-primary" id="sendMessageButton">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+
+<script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("feedback");
+    var btns = header.getElementsByClassName("btn btn-feedback");
+    console.log("btns length:"+btns.length);
+    for (var i = 0; i < btns.length; i++) {
+        console.log(i)
+        btns[i].addEventListener("click", function() {
+            var current=this;
+            console.log("current:"+current.id);
+            var inactive = document.getElementsByClassName("btn btn-feedback");
+            var active = document.getElementsByClassName("btn btn-feedback active");
+
+            console.log("inactive length:"+inactive.length);
+            console.log("active length:"+active.length);
+
+            var rating = this.id.charAt(this.id.length-1);
+
+            console.log("rating:"+rating);
+
+            for(var i = 0; i < inactive.length; i++) {
+
+                if (i < rating) {
+                    inactive[i].className = "btn btn-feedback active";
+                } else {
+                    inactive[i].className = "btn btn-feedback";
+                }
+                console.log(i);
+                console.log(inactive[i].id + ":" +inactive[i].className);
+            }
+        });
+    }
+</script>
+
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Contact form JavaScript -->
+<!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+</body>
+
+</html>

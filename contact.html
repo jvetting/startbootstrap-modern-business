@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Modern Business - Start Bootstrap Template</title>
+  <title>Contact</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -129,8 +129,8 @@
     <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <div class="row">
       <div class="col-lg-8 mb-4">
-        <h3>Schedule an Appointment</h3>
-        <p66>Just follow the forms and we'll get back to you with a time available in one business day!</p66>
+        <h3 style="font-family: Arial Black; color:dodgerblue">Arrange a Service</h3>
+        <p66>Just follow the forms and we'll get back to you with a time available within one business day!</p66>
         <form name="sentMessage" id="contactForm" novalidate>
           <div class="row">
             <div class="col-6 col-md-4">
@@ -200,7 +200,7 @@
                 <div class="controls">
                   <span class="input-group-addon"><i class="fa fa-map-pin"></i></span>
                   <label class="control-label">City / Town:</label>
-                  <input type="text" class="form-control" id="city" placeholder="city">
+                  <input type="text" class="form-control" id="city" placeholder="city" required data-validation-required-message="Please enter your city.">
                   <p class="help-block"></p>
                 </div>
               </div>
@@ -212,7 +212,7 @@
                 <div class="controls">
                   <span class="input-group-addon"><i class="fa fa-globe"></i></span>
                   <label class="control-label">State / Province / Region:</label>
-                  <select class="custom-select" id="region">
+                  <select class="custom-select" id="region" required data-validation-required-message="Please enter your region.">
                     <option value="MD" selected>Maryland</option>
                     <option value="DC">Washington DC</option>
                     <option value="VA">Virginia</option>
@@ -227,7 +227,7 @@
                 <div class="controls">
                   <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
                   <label class="control-label">Zip / Postal Code:</label>
-                    <input type="text" class="form-control" id="postal-code" placeholder="zip or postal code">
+                    <input type="text" class="form-control" id="postal-code" placeholder="zip or postal code" required data-validation-required-message="Please enter your zip code.">
                     <p class="help-block"></p>
                 </div>
               </div>
@@ -270,18 +270,18 @@
               </div>
             </div>
           </div-->
-
+          <span class="input-group-addon"><i class="fa fa-question"></i></span>
           <label>Reason for contact:</label>
           <div class="row">
             <div class="col-4">
-            <select class="custom-select" id="exists">
+            <select class="custom-select" id="exists" required data-validation-required-message="Please enter your service info.">
               <option value="" disabled selected>Select your option</option>
               <option value="Existing">My existing service</option>
               <option value="New">Contracting a new service</option>
             </select>
             </div>
             <div class="col-8">
-              <select class="custom-select" id="type">
+              <select class="custom-select" id="type" required data-validation-required-message="Please enter your service type.">
                 <option value="" disabled selected>Select your pest</option>
 
                 <optgroup label="Pests">
@@ -317,27 +317,52 @@
 
           <div class="control-group form-group">
             <div class="controls">
+              <span class="input-group-addon"><i class="fa fa-mail-reply"></i></span>
+              <label>Reply method:</label>
+              <select class="custom-select" id="reply" required data-validation-required-message="Please enter your preferred contact method.">
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
               <label>Additional notes:</label>
               <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your additional notes" maxlength="999" style="resize:none"></textarea>
             </div>
           </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <input type="checkbox" class="form-check-input" id="confirmation" required data-validation-required-message="We require your consent to contact you further.">
+              <label class="form-check-label" for="confirmation" style="font-family: Arial Black; color:black">Yes, Calvert Exterminators may contact me</label>
+            </div>
+            <a>
+              By submitting this request, I validate that I am 18 years of age or older. Additionally, I give Calvert Exterminators permission to call or text me at the number provided regarding
+              Calvert Exterminators services using automated technology.
+              I understand my consent is not a condition of purchase.
+              Commercial customer? Call (410) 535-8661 </a>
+          </div>
+
           <div id="success"></div>
           <!-- For success/fail messages -->
           <button type="submit" class="btn btn-primary" id="sendMessageButton">Submit</button>
         </form>
       </div>
-
     </div>
     <!-- /.row -->
 
+
     <!-- Feedback form -->
+    <!-- MAKE THIS LINK TO FEEDBACK.HTML -->
     <div class="container-fluid" style="background: dodgerblue">
       <div class="row">
         <div class="col-6 col-sm-4">
           <p class="text-white m-0">Feedback</p>
         </div>
         <div class="col-6 col-md-4">
-          <div class="btn-group" role="group" aria-label="Feedback" id="feedback">
+          <div class="btn-group" role="group" aria-label="Feedback" id="feedback-contact">
             <button type="button" class="btn btn-feedback" id="star-1"><i class="fa fa-star"></i></button>
             <button type="button" class="btn btn-feedback" id="star-2"><i class="fa fa-star"></i></button>
             <button type="button" class="btn btn-feedback" id="star-3"><i class="fa fa-star"></i></button>
@@ -347,13 +372,12 @@
         </div>
       </div>
     </div>
-
   </div>
   <!-- /.container -->
 
   <script>
     // Add active class to the current button (highlight it)
-    var header = document.getElementById("feedback");
+    var header = document.getElementById("feedbackContact");
     var btns = header.getElementsByClassName("btn btn-feedback");
     console.log("btns length:"+btns.length);
     for (var i = 0; i < btns.length; i++) {
