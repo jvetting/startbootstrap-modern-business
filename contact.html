@@ -194,6 +194,7 @@
           <!-- /row 2 -->
 
           <!-- city input-->
+          <!------------------------------------CHANGE TO A DROPDOWN SO THAT ONLY CERTAIN CITIES CAN BE SELECTED---------------------------------------------------->
           <div class="row">
             <div class="col-6 col-md-4">
               <div class="control-group form-group">
@@ -354,83 +355,119 @@
     <!-- /.row -->
 
 
-    <!-- Feedback form -->
-    <!-- MAKE THIS LINK TO FEEDBACK.HTML -->
-    <div class="container-fluid" style="background: dodgerblue">
-      <div class="row">
-        <div class="col-6 col-sm-4">
-          <p class="text-white m-0">Feedback</p>
-        </div>
-        <div class="col-6 col-md-4">
-          <div class="btn-group" role="group" aria-label="Feedback" id="feedback-contact">
-            <button type="button" class="btn btn-feedback" id="star-1"><i class="fa fa-star"></i></button>
-            <button type="button" class="btn btn-feedback" id="star-2"><i class="fa fa-star"></i></button>
-            <button type="button" class="btn btn-feedback" id="star-3"><i class="fa fa-star"></i></button>
-            <button type="button" class="btn btn-feedback" id="star-4"><i class="fa fa-star"></i></button>
-            <button type="button" class="btn btn-feedback" id="star-5"><i class="fa fa-star"></i></button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form name="sentMessage" id="feedbackForm" novalidate>
+              <div class="row">
+                <div class="col-6 col-md-4">
+                  <div class="control-group form-group">
+                    <div class="controls">
+                      <label><span class="input-group-addon"><i class="fa fa-envelope"></i></span> Email Address (optional):</label>
+                      <input type="email" class="form-control" id="email" placeholder="example@example.com">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /row 1 -->
+
+              <span class="input-group-addon"><i class="fa fa-commenting"></i></span>
+              <label>How would you rate your experience?</label>
+              <!-- Feedback form -->
+              <div class="container-fluid" style="background: dodgerblue">
+                <div class="row">
+                  <div class="col-6 col-md-4">
+                    <div class="btn-group" role="group" aria-label="Feedback" id="feedback" required data-validation-required-message="Please enter your service info.">
+                      <button type="button" class="btn btn-feedback" id="star-1"><i class="fa fa-star"></i></button>
+                      <button type="button" class="btn btn-feedback" id="star-2"><i class="fa fa-star"></i></button>
+                      <button type="button" class="btn btn-feedback" id="star-3"><i class="fa fa-star"></i></button>
+                      <button type="button" class="btn btn-feedback" id="star-4"><i class="fa fa-star"></i></button>
+                      <button type="button" class="btn btn-feedback" id="star-5"><i class="fa fa-star"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="control-group form-group">
+                <div class="controls">
+                  <label>Additional notes:</label>
+                  <textarea rows="10" cols="100" class="form-control" id="feedbackMessage" maxlength="999" style="resize:none"></textarea>
+                </div>
+              </div>
+
+              <div class="control-group form-group">
+                <div class="controls">
+                  <input type="checkbox" class="form-check-input" id="confirmation" required data-validation-required-message="We require your consent to contact you further.">
+                  <label class="form-check-label" for="confirmation" style="font-family: Arial Black; color:black">Yes, Calvert Exterminators may contact me</label>
+                </div>
+                <a>
+                  By submitting this request, I validate that I am 18 years of age or older. Additionally, I give Calvert Exterminators permission to call or text me at the number provided regarding
+                  Calvert Exterminators services using automated technology.
+                  I understand my consent is not a condition of purchase.
+                  Commercial customer? Call (410) 535-8661
+                </a>
+              </div>
+
+              <!-- For success/fail messages -->
+              <!--div id="success"></div-->
+              <!--button type="submit" class="btn btn-primary" id="sendMessageButton">Submit</button-->
+              <script>
+                // Add active class to the current button (highlight it)
+                var header = document.getElementById("feedback");
+                var btns = header.getElementsByClassName("btn btn-feedback");
+                console.log("btns length:"+btns.length);
+                for (var i = 0; i < btns.length; i++) {
+                  console.log(i)
+                  btns[i].addEventListener("click", function() {
+                    var current=this;
+                    console.log("current:"+current.id);
+                    var inactive = document.getElementsByClassName("btn btn-feedback");
+                    var active = document.getElementsByClassName("btn btn-feedback active");
+
+                    console.log("inactive length:"+inactive.length);
+                    console.log("active length:"+active.length);
+
+                    var rating = this.id.charAt(this.id.length-1);
+
+                    console.log("rating:"+rating);
+
+                    for(var i = 0; i < inactive.length; i++) {
+
+                      if (i < rating) {
+                        inactive[i].className = "btn btn-feedback active";
+                      } else {
+                        inactive[i].className = "btn btn-feedback";
+                      }
+                      console.log(i);
+                      console.log(inactive[i].id + ":" +inactive[i].className);
+                    }
+                  });
+                }
+              </script>
+              <button type="submit" class="btn btn-primary d-none" id="sendFeedbackButton">Submit</button>
+            </form>
+          </div>
+          <!-- ./Modal body -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <!-- For success/fail messages -->
+            <button type="button" class="btn btn-primary feedback-submit">Send message</button>
+            <!--button type="submit" class="btn btn-primary sendMessageButton" id="sendMessageButton">Submit</button-->
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- /.container -->
-
-  <script>
-    // Add active class to the current button (highlight it)
-    var header = document.getElementById("feedbackContact");
-    var btns = header.getElementsByClassName("btn btn-feedback");
-    console.log("btns length:"+btns.length);
-    for (var i = 0; i < btns.length; i++) {
-      console.log(i)
-      btns[i].addEventListener("click", function() {
-        var current=this;
-        console.log("current:"+current.id);
-        var inactive = document.getElementsByClassName("btn btn-feedback");
-        var active = document.getElementsByClassName("btn btn-feedback active");
-
-        //console.log("id:"+this.id);
-
-        console.log("inactive length:"+inactive.length);
-        console.log("active length:"+active.length);
-
-        //if(current.length>0){
-          var rating = this.id.charAt(this.id.length-1);
-
-          console.log("rating:"+rating);
-
-          for(var i = 0; i < inactive.length; i++) {
-
-            if (i < rating) {
-              inactive[i].className = "btn btn-feedback active";
-            } else {
-              inactive[i].className = "btn btn-feedback";
-              //active[i].className = "btn btn-feedback";
-            }
-
-
-            console.log(i);
-            console.log(inactive[i].id + ":" +inactive[i].className);
-
-            /*
-          for(var i = 0; i < current.length; i++){
-            alert(current[i].className);
-          }
-          */
-          }
-        //}
-
-        /*
-        if (current.length > 0) {
-          current[0].className = current[0].className.replace(" active", "");
-        }
-        this.className += " active";
-
-         */
-        //alert(this.className);
-      });
-    }
-  </script>
-
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">

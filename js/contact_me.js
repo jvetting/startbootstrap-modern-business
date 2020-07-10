@@ -156,6 +156,9 @@ $(function() {
       console.log(i)
       var active = document.getElementsByClassName("btn btn-feedback active");
       console.log("active length:"+active.length);
+      if(active.length==0){
+        return;
+      }
       var last_active = active[active.length-1].id;
       var rating = last_active.charAt(last_active.length-1);
 
@@ -224,6 +227,13 @@ $(function() {
     filter: function() {
       return $(this).is(":visible");
     },
+  });
+
+  $('body').on('click', '.feedback-submit', function (e) {
+    var feedbackForm = document.getElementById("feedbackForm");
+    console.log(feedbackForm.id);
+    $(feedbackForm).submit();
+    //$('#exampleModal').modal('hide');
   });
 });
 

@@ -36,9 +36,9 @@ body {
 }
 */
 .nav-contact {
-  color: #ffc107 !important;
+  color: #cccc00 !important;
   background-color: black;
-  border: solid #ffc107;
+  border: solid #cccc00;
 
   font-size: 30px;
 
@@ -52,6 +52,11 @@ body {
   padding-bottom: 25px;
   padding-left: 25px;
   */
+}
+
+.text-tertiary {
+  color:#cccc00;
+  font-family: Arial Black;
 }
 /*
 .carousel-small {
@@ -67,6 +72,14 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.feedback-affixed {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 8em;
+  margin-top: -2.5em;
 }
 
 .custom-select {
@@ -129,15 +142,15 @@ body {
 }
 
 .btn-feedback:active {
-  background-color: limegreen;
+  color: limegreen;
 }
 
 .btn-feedback.active {
-  background-color: limegreen;
+  color: limegreen;
 }
 
 .btn-feedback:focus {
-  background-color: limegreen;
+  color: limegreen;
 }
 
 .flex-direction-nav li {

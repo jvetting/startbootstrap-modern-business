@@ -36,10 +36,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/modern-business.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/modern-business.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dog-runs.html" beforeDir="false" afterPath="$PROJECT_DIR$/dog-runs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/contact_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/contact_me.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail/contact_me.php" beforeDir="false" afterPath="$PROJECT_DIR$/mail/contact_me.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mammals.html" beforeDir="false" afterPath="$PROJECT_DIR$/mammals.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pest-control.html" beforeDir="false" afterPath="$PROJECT_DIR$/pest-control.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reptiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/reptiles.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +113,8 @@
       <workItem from="1593710180929" duration="7076000" />
       <workItem from="1593800552652" duration="2922000" />
       <workItem from="1594055844013" duration="11446000" />
-      <workItem from="1594138732907" duration="14385000" />
+      <workItem from="1594138732907" duration="15109000" />
+      <workItem from="1594401569455" duration="14279000" />
     </task>
     <servers />
   </component>
