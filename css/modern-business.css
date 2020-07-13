@@ -13,6 +13,53 @@ body {
   background-size: cover;
   -o-background-size: cover;
    */
+  background-color: #1D5171;
+}
+
+p {
+  color: white;
+}
+
+h1 {
+  font-family: Arial Black;
+  color: #DFCE9D;
+}
+
+h2 {
+  font-family: Arial Black;
+  color: #DFCE9D;
+}
+
+h3 {
+  font-family: Arial Black;
+  color: #DFCE9D;
+}
+.h3-carousel {
+  font-family: Arial Black;
+  background-color: #1D5171;
+  color: #DFCE9D;
+  opacity:0.6;
+}
+
+h4 {
+  color: #DFCE9D;
+}
+
+.testimonial-card {
+  background-color: #C2B280;
+}
+
+.bg-main {
+  background-color: #C2B280;
+}
+
+.bg-second {
+  background-color: #2E9CCA;
+  border-radius: 25px;
+}
+
+li {
+  color: #DFCE9D;
 }
 
 .carousel-item {
@@ -30,15 +77,32 @@ body {
   margin-bottom: 0px;
 }
 
+.card-title {
+  color: #DFCE9D;
+  font-family: Arial Black;
+}
+
+a:link {
+  color: #DFCE9D;
+}
+
+a:visited {
+  color: #342d19;
+}
+
+a:active {
+  color: #e7ddcb;
+}
+
 /*
 .nav-item {
   font-family: Impact, Charcoal, sans-serif;
 }
 */
 .nav-contact {
-  color: #cccc00 !important;
-  background-color: black;
-  border: solid #cccc00;
+  color: #C2B280 !important;
+  background-color: #1D5171;
+  border: solid #C2B280;
 
   font-size: 30px;
 
@@ -54,8 +118,12 @@ body {
   */
 }
 
-.text-tertiary {
-  color:#cccc00;
+.card-body {
+  background-color: #2E9CCA;
+}
+
+.text-main {
+  color:#C2B280;
   font-family: Arial Black;
 }
 /*
@@ -76,10 +144,22 @@ body {
 
 .feedback-affixed {
   position: fixed;
+  z-index: 9999;
   right: 0;
   top: 50%;
   width: 8em;
   margin-top: -2.5em;
+}
+
+.banner-affixed {
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  top: 25%;
+  display: flex;
+  width: 100%;
+  margin-top: -2.5em;
+  background-color: yellow;
 }
 
 .custom-select {
@@ -153,6 +233,11 @@ body {
   color: limegreen;
 }
 
+.modal-title {
+  color:#1D5171;
+  font-family: Arial Black;
+}
+
 .flex-direction-nav li {
   position: absolute;
   height: 100%;
@@ -208,24 +293,6 @@ body {
   transform: translateY(-27px) rotate(45deg);
 }
 
-
-/* CSS for COVID-19 banner*/
-/* CSS used here will be applied after bootstrap.css */
-
-.aligner {
-  /*
-  padding-top: 8px;
-  padding-left: 10px;
-  display: flex;
-  vertical-align: middle;
-   */
-}
-.topbar{
-  /*
-  padding-right: 25px;
-   */
-}
-
 h1.thick {
   font-weight:bold;
 }
@@ -237,24 +304,6 @@ h2.thick {
 h3.thick {
   font-weight:bold;
 }
-
-.btn {
-  /*
-  color: #000;
-  font-weight: bold;
-  */
-}
-
-/*
-.icon {
-  background: url('Willie.jpg');
-  height: 20px;
-  width: 20px;
-  display: block;
-}
-<span class='icon'></span>
-*/
-
 
 .sampleContent {
   padding: 4em 0 4em 0;

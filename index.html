@@ -10,6 +10,9 @@
 
   <title>Modern Business - Start Bootstrap Template</title>
 
+  <!-- favicon Calvert Exterminators logo -->
+  <link rel="icon" href="CalvertExt-logo.png">
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -83,7 +86,7 @@
               <a class="dropdown-item" href="bed-bugs.html">Bed Bugs</a>
               <a class="dropdown-item" href="roaches.html">Cockroaches</a>
               <a class="dropdown-item" href="fleas.html">Fleas</a>
-              <a class="dropdown-item" href="flies.html">Flies</a>
+              <a class="dropdown-item" href="flies.html">Flies (wip)</a>
               <a class="dropdown-item" href="mosquitoes.html">Mosquitoes</a>
               <a class="dropdown-item" href="rodents.html">Rodents</a>
               <a class="dropdown-item" href="hornets.html">Hornets</a>
@@ -96,7 +99,6 @@
               Animal Index
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="trapping.html">Info</a>
               <a class="dropdown-item" href="mammals.html">Mammals</a>
               <a class="dropdown-item" href="reptiles.html">Reptiles</a>
               <!-- TURN MAMMALS AND REPTILES INTO DROPDOWN SUBMENUS -->
@@ -173,9 +175,10 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
+        <!-- BACKGROUND IMAGE: FINISHED CONTACT PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
         <div class="carousel-item active" style="background-image: url('https://placehold.it/1900x1080')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>New contact form!</h3>
+            <h3 class="h3-carousel">New contact form!</h3>
             <p>As part of our website overhaul, a new contact page has been created with convenience in mind.
               Simply enter your contact information and choose the type of service needed from the dropdown.
               Our website will take care of the rest and we will contact you within one business day to set up a time slot!
@@ -185,7 +188,7 @@
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('https://placehold.it/1900x1080')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Dog runs!</h3>
+            <h3 class="h3-carousel">Dog runs!</h3>
             <p>Some infestations require special, more natural intervention.
             Our dog runs involve the usage of our four humanely trained canine exterminators
             in the sniffing out of rodents, mosquitoes, bed bugs, and termites.
@@ -195,7 +198,7 @@
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Got Termites?</h3>
+            <h3 class="h3-carousel">Got Termites?</h3>
             <p>We’re receiving many calls for termites! The recent mild winter wasn't enough to cut down on them and now they're in our houses!
               These pests can cause massive amounts of damage in very little time. A termite queen can live 15 to 25 years and lay an egg every 15 seconds.
               The average cost in the US to repair termite damage is $3,300, so what are you waiting for? Call us now to save your home and YOUR WALLET!</p>
@@ -214,17 +217,37 @@
   </header>
   <!-- Page Content -->
   <div class="container">
-    <!----------------------------------------------------------------------!!!!!!!!!!!!!ADD AN AFFIXED BANNER FOR COVID INFO!!!!!!!!!!!!!!!---------------->
+    <!-- COVID banner -->
+    <!-- Button trigger banner -->
+    <!--div id="banner" class="banner-affixed">
+      <h3 style="color: black"><span><i class="text-black fa fa-exclamation-circle"></i></span>
+        COVID-19:
+      </h3>
+      <h4 style="color: black">
+         Calvert Exterminators is committed to protecting public health by adhering to the COVID-19 guidelines. (CLICK TO DISMISS)
+      </h4>
+    </div-->
+      <!--script>
+        var btn = document.getElementById("banner");
+        console.log(btn.className);
+        btn.addEventListener("click", function(){
+          var btn = document.getElementById("banner");
+          console.log(btn.className);
+          //btn.className="btn btn-primary banner-affixed d-none";
+          btn.className="banner-affixed d-none";
+          console.log(btn.className);
+        });
+      </script-->
     <!-- Call to Action Well -->
-    <div class="card text-white bg-primary my-5 py-4 text-center">
+    <div class="card text-white bg-main my-5 py-4 text-center">
       <div class="card-body">
-        <h1 class="text-tertiary">LET OUR FAMILY TAKE CARE OF YOURS</h1>
+        <h1 class="text-main">LET OUR FAMILY TAKE CARE OF YOURS</h1>
         <p class="text-white m-0">Here at Calvert Exterminators, we strive to combine the professional quality of bigger names with the personal feel of local business.</p>
       </div>
     </div>
 
     <!-- Marketing Icons Section -->
-    <div class="row">
+    <!--div class="row">
       <div class="col-lg-4 mb-4">
         <div class="card h-100">
           <h4 class="card-header">Dog Runs</h4>
@@ -258,7 +281,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div-->
     <!-- /.row -->
 
     <!-- Portfolio Section -->
@@ -269,20 +292,18 @@
           <a href="#"><img class="card-img-top" src="https://placehold.it/700x400" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Pest Control</a>
+              <a href="pest-control.html">Pest Control</a>
             </h4>
             <p class="card-text">We use the most effective solutions to shut down infestations of all pests native to the Southern Maryland and DC area.</p>
-            <a href="trapping.html">More</a>
           </div>
         </div>
         <div class="card h-100">
           <a href="#"><img class="card-img-top" src="https://placehold.it/700x400" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
-              <a href="#">Termite Control</a>
+              <a href="termite-control.html">Termite Control</a>
             </h4>
             <p class="card-text">Our family will help protect yours and the roof above their heads by ending current infestations and preventing future ones.</p>
-            <a href="trapping.html">More</a>
           </div>
         </div>
       </div>
@@ -294,7 +315,7 @@
             <a href="#"><img class="card-img-top" src="https://placehold.it/700x400" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Bed Bug Treatment</a>
+                <a href="bed-bugs.html">Bed Bug Treatment</a>
               </h4>
               <!--p class="card-text"></p-->
             </div>
@@ -303,7 +324,7 @@
             <a href="#"><img class="card-img-top" src="https://placehold.it/700x400" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Mosquito Control</a>
+                <a href="mosquitoes.html">Mosquito Control</a>
               </h4>
               <!--p class="card-text">Cockroaches live in the kitchens and walls of warm homes, coming out at night to eat any type
                 of food and leaving diseases in their wake.</p-->
@@ -313,7 +334,7 @@
             <a href="#"><img class="card-img-top" src="https://placehold.it/700x400" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Wildlife Control</a>
+                <a href="trapping.html">Wildlife Control</a>
               </h4>
               <!--p class="card-text">With over 150 species in the U.S., Mosquitoes come out during warm temperatures of spring and summer.
                 They are host to many diseases due to feeding on a wide range of mammals.</p-->
@@ -361,9 +382,9 @@
 
 
   <div class="container">
-    <div class="card text-white bg-primary my-5 py-4 text-center">
+    <div class="card text-white bg-main my-5 py-4 text-center">
       <div class="card-body">
-        <h1 class="text-tertiary">Testimonials</h1>
+        <h1 class="text-main">Testimonials</h1>
         <p class="text-white m-0">Reviews from our clients!</p>
       </div>
     </div>
@@ -472,7 +493,7 @@
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content" style="background-color: #C2B280">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -585,9 +606,9 @@
   </div>
 
   <div class="container">
-    <div class="card text-white bg-primary my-5 py-4 text-center">
+    <div class="card text-white bg-main my-5 py-4 text-center">
       <div class="card-body">
-        <h1 class="text-tertiary">Additional Information</h1>
+        <h1 class="text-main">Additional Information</h1>
         <p class="text-white m-0">Keep up to date on our services through our Facebook, Instagram, and Twitter pages!</p>
       </div>
     </div>
