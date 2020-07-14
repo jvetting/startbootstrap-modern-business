@@ -493,7 +493,7 @@
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content" style="background-color: #C2B280">
+        <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -508,7 +508,7 @@
                   <div class="control-group form-group">
                     <div class="controls">
                       <label><span class="input-group-addon"><i class="fa fa-envelope"></i></span> Email Address (optional):</label>
-                      <input type="email" class="form-control" id="email" placeholder="example@example.com">
+                      <input type="email" class="form-control" id="emailFeedback" placeholder="example@example.com">
                     </div>
                   </div>
                 </div>
@@ -541,8 +541,8 @@
 
               <div class="control-group form-group">
                 <div class="controls">
-                  <input type="checkbox" class="form-check-input" id="confirmation" required data-validation-required-message="We require your consent to contact you further.">
-                  <label class="form-check-label" for="confirmation" style="font-family: Arial Black; color:black">Yes, Calvert Exterminators may contact me</label>
+                  <input type="checkbox" class="form-check-input" id="confirmationFeedback" required data-validation-required-message="We require your consent to contact you further.">
+                  <label class="form-check-label" for="confirmationFeedback" style="font-family: Arial Black; color:black">Yes, Calvert Exterminators may contact me</label>
                 </div>
                 <a>
                   By submitting this request, I validate that I am 18 years of age or older. Additionally, I give Calvert Exterminators permission to call or text me at the number provided regarding
@@ -574,7 +574,7 @@
                     var rating = this.id.charAt(this.id.length-1);
 
                     console.log("rating:"+rating);
-
+                    
                     for(var i = 0; i < inactive.length; i++) {
 
                       if (i < rating) {
@@ -595,7 +595,6 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <!-- For success/fail messages -->
-            <div id="success"></div>
             <button type="button" class="btn btn-primary feedback-submit">Send message</button>
             <!--button type="submit" class="btn btn-primary sendMessageButton" id="sendMessageButton">Submit</button-->
           </div>

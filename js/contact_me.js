@@ -39,8 +39,8 @@ $(function() {
       //random num possibilites: (26^2)*10 ~ 6,760 unique combos a day
       var date = new Date();
       var name_arr = name.split(" ");
-      var uid = name_arr[0].substring(0,1)+name_arr[1].substring(0,1)+(Math.floor(Math.random() * (9 - 0 + 1)) + 0);
-      var ticket = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDay()+"/"+uid;
+      var uid = name_arr[0].substring(0,1)+name_arr[1].substring(0,1);//+(Math.floor(Math.random() * (9 - 0 + 1)) + 0);
+      var ticket = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+"/"+uid;
       console.log(ticket);
 
       //var message = header + $("textarea#message").val();//$("textarea#message").val();
@@ -146,8 +146,8 @@ $(function() {
     submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
-      var email = $("input#email").val();
-      var confirmation = $("input#confirmation").val();
+      var email = $("input#emailFeedback").val();
+      var confirmationFeedback = $("input#confirmationFeedback").val();
       console.log(email);
       //----------------------------------------------------------------------------------------------------------------
       var header = document.getElementById("feedback");
@@ -157,13 +157,13 @@ $(function() {
       var active = document.getElementsByClassName("btn btn-feedback active");
       console.log("active length:"+active.length);
       if(active.length==0){
-        return;
+        return;//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! need to handle an error here
       }
       var last_active = active[active.length-1].id;
       var rating = last_active.charAt(last_active.length-1);
 
       console.log(rating);
-      console.log(confirmation);
+      console.log(confirmationFeedback);
 
       //var message = header + $("textarea#message").val();//$("textarea#message").val();
       //----------------------------------------------------------------------------------------------------------------

@@ -5,6 +5,34 @@ if(!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){echo "Email !valid";}
 if(empty($_POST['message'])){echo "Message";}
 else
 {
+
+    /**--------------------------------------------------------------------------------------------------------------
+     * First: Connect to DB
+     */
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "calvert";
+
+// Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    /*
+
+    $sql = "INSERT INTO tickets (ticket)
+VALUES ('2020-7-13/VJ3')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
+    */
    /**
     * Contact email
     */
@@ -57,7 +85,33 @@ else
       $exists = strip_tags(htmlspecialchars($_POST['exists']));
       $message = strip_tags(htmlspecialchars($_POST['message']));
       $ticket = strip_tags(htmlspecialchars($_POST['ticket']));
-       $reply = strip_tags(htmlspecialchars($_POST['reply']));
+      $reply = strip_tags(htmlspecialchars($_POST['reply']));
+
+      /*----------------------------------------------------------------------------------------------------------------
+       * Generate unique num for last digits of ticket and post to db
+       */
+      $ticket .= "10";
+      $exists = TRUE;
+      $num=00;
+      while($exists==TRUE){
+          //generate new ticket num
+          $num = rand(10,90);
+          $str = "".$num;
+          $ticket = substr($ticket, 0, strlen($ticket)-2).$str;
+
+          $sql="SELECT EXISTS(SELECT * FROM tickets WHERE ticket = '{$ticket}');";
+          $result = $conn->query($sql);
+          $resultArr = $result->fetch_array(MYSQLI_NUM);
+          if($resultArr[0]==FALSE) $exists=FALSE;
+      }
+      $sql="INSERT INTO tickets VALUE ('{$ticket}');";
+      //$result = $conn->query($sql);
+       if ($conn->query($sql) == TRUE) {
+            echo "New record created successfully";
+       } else {
+           echo "Error: " . $sql . "<br>" . $conn->error;
+       }
+       $conn->close();
 
 // Create the email and send the message
       $to = 'jvetting@iastate.edu'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.

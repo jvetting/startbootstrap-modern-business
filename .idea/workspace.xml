@@ -33,18 +33,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07bd90fa-c4c8-409a-967d-e1636b757089" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ants.html" beforeDir="false" afterPath="$PROJECT_DIR$/ants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bed-bugs.html" beforeDir="false" afterPath="$PROJECT_DIR$/bed-bugs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/modern-business.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/modern-business.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pest-control.html" beforeDir="false" afterPath="$PROJECT_DIR$/pest-control.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roaches.html" beforeDir="false" afterPath="$PROJECT_DIR$/roaches.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rodents.html" beforeDir="false" afterPath="$PROJECT_DIR$/rodents.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiders.html" beforeDir="false" afterPath="$PROJECT_DIR$/spiders.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/termite-control.html" beforeDir="false" afterPath="$PROJECT_DIR$/termite-control.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trapping.html" beforeDir="false" afterPath="$PROJECT_DIR$/trapping.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/contact_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/contact_me.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail/contact_me.php" beforeDir="false" afterPath="$PROJECT_DIR$/mail/contact_me.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +63,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP from XAMPP">
+    <include_path>
+      <path value="$PROJECT_DIR$/../../../../xampp/php" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1dH2jUCrKLXFcehOk42jm19dR2h" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -72,9 +75,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -85,6 +90,15 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RunManager">
+    <configuration name="PHP" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -119,7 +133,11 @@
       <workItem from="1594138732907" duration="15109000" />
       <workItem from="1594401569455" duration="14516000" />
       <workItem from="1594488154240" duration="970000" />
-      <workItem from="1594654779908" duration="13416000" />
+      <workItem from="1594654779908" duration="18761000" />
+      <workItem from="1594678582353" duration="1135000" />
+      <workItem from="1594745472154" duration="4048000" />
+      <workItem from="1594750413205" duration="2700000" />
+      <workItem from="1594753147052" duration="12504000" />
     </task>
     <servers />
   </component>
@@ -145,22 +163,52 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="860" y="355" key="#CLI_Interpreters" timestamp="1593187126294">
+    <state x="1460" y="473" key="#CLI_Interpreters" timestamp="1594751084945">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="1460" y="473" key="#CLI_Interpreters/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1594751084945" />
     <state x="860" y="355" key="#CLI_Interpreters/0.0.2560.1400@0.0.2560.1400" timestamp="1593187126294" />
-    <state x="987" y="343" key="#PHP" timestamp="1593188098081">
+    <state x="987" y="343" key="#PHP" timestamp="1594672428820">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="987" y="343" key="#PHP/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1593188098081" />
-    <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593197618185">
+    <state x="987" y="343" key="#PHP/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1594672428820" />
+    <state x="669" y="541" key="#SQL_Dialects" timestamp="1594757344919">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1593197618185" />
-    <state x="-1180" y="165" key="FileChooserDialogImpl" timestamp="1592246633965">
-      <screen x="-1920" y="-109" width="1920" height="1040" />
+    <state x="669" y="541" key="#SQL_Dialects/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1594757344919" />
+    <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594754789951">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1594754789951" />
+    <state x="987" y="369" key="FileChooserDialogImpl" timestamp="1594753495630">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="-1180" y="165" key="FileChooserDialogImpl/0.0.1366.728/-1920.-109.1920.1040@-1920.-109.1920.1040" timestamp="1592246633965" />
+    <state x="987" y="369" key="FileChooserDialogImpl/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1594753495630" />
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1594765479650">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1594765479650" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1594765479650">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1594765479650" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1594765479650">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1594765479650" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1594765479650">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1594765479650" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1594753125181">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1594753125181" />
+    <state x="781" y="345" key="SettingsEditor" timestamp="1594754855248">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1594754855248" />
     <state x="1975" y="599" width="585" height="801" key="find.popup" timestamp="1594664009259">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
