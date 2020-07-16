@@ -42,6 +42,7 @@ h3 {
 }
 
 h4 {
+  font-family: Arial Black;
   color: #DFCE9D;
 }
 
@@ -120,6 +121,11 @@ a:active {
 
 .card-body {
   background-color: #2E9CCA;
+}
+
+.card-header {
+  background-color: #C2B280;
+  font-family: Arial Black;
 }
 
 .text-main {
