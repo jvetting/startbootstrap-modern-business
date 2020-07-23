@@ -34,16 +34,10 @@
   <component name="ChangeListManager">
     <list default="true" id="07bd90fa-c4c8-409a-967d-e1636b757089" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bed-bugs.html" beforeDir="false" afterPath="$PROJECT_DIR$/bed-bugs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/modern-business.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/modern-business.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fleas.html" beforeDir="false" afterPath="$PROJECT_DIR$/fleas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hornets.html" beforeDir="false" afterPath="$PROJECT_DIR$/hornets.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mosquitoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/mosquitoes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flies.html" beforeDir="false" afterPath="$PROJECT_DIR$/flies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pest-control.html" beforeDir="false" afterPath="$PROJECT_DIR$/pest-control.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roaches.html" beforeDir="false" afterPath="$PROJECT_DIR$/roaches.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rodents.html" beforeDir="false" afterPath="$PROJECT_DIR$/rodents.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiders.html" beforeDir="false" afterPath="$PROJECT_DIR$/spiders.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/termites.html" beforeDir="false" afterPath="$PROJECT_DIR$/termites.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +138,7 @@
       <workItem from="1594941515598" duration="1578000" />
       <workItem from="1595012358904" duration="5989000" />
       <workItem from="1595254581349" duration="4954000" />
-      <workItem from="1595527661067" duration="6040000" />
+      <workItem from="1595527661067" duration="8527000" />
     </task>
     <servers />
   </component>

@@ -46,6 +46,15 @@ h4 {
   color: #DFCE9D;
 }
 
+h5 {
+  font-family: Arial Black;
+  color: #DFCE9D;
+}
+
+.btn-info {
+
+}
+
 .testimonial-card {
   background-color: #C2B280;
 }
