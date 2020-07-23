@@ -331,7 +331,11 @@ h3.thick {
 .rounded-circle-custom {
   vertical-align: middle;
   horiz-align: center;
-  width: 150px;
-  height: 150px;
+  width: 77px;
+  height: 77px;
   border-radius: 50%;
+}
+
+.img-fluid-custom {
+
 }
