@@ -54,7 +54,10 @@
       <change beforePath="$PROJECT_DIR$/roaches.html" beforeDir="false" afterPath="$PROJECT_DIR$/roaches.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rodents.html" beforeDir="false" afterPath="$PROJECT_DIR$/rodents.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spiders.html" beforeDir="false" afterPath="$PROJECT_DIR$/spiders.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/termite-control.html" beforeDir="false" afterPath="$PROJECT_DIR$/termite-control.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/termites.html" beforeDir="false" afterPath="$PROJECT_DIR$/termites.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trapping.html" beforeDir="false" afterPath="$PROJECT_DIR$/trapping.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +70,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -156,7 +159,8 @@
       <workItem from="1595012358904" duration="5989000" />
       <workItem from="1595254581349" duration="4954000" />
       <workItem from="1595527661067" duration="8983000" />
-      <workItem from="1595615443867" duration="2344000" />
+      <workItem from="1595615443867" duration="2751000" />
+      <workItem from="1595790307489" duration="3887000" />
     </task>
     <servers />
   </component>
@@ -204,22 +208,22 @@
     </state>
     <state x="-1180" y="165" key="FileChooserDialogImpl/0.0.1366.728/-1920.-109.1920.1040@-1920.-109.1920.1040" timestamp="1592246633965" />
     <state x="987" y="369" key="FileChooserDialogImpl/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1594753495630" />
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1595539028229">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1595619664908">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1595539028229" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1595539028229">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1595619664908" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1595619664908">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1595539028229" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1595539028229">
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1595619664908" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1595619664908">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1595539028229" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1595539028229">
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1595619664908" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1595619664908">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1595539028229" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.145.1920.1040@0.0.2560.1400" timestamp="1595619664908" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1594753125181">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
