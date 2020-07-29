@@ -24,7 +24,7 @@
 
 </head>
 
-<body>
+<body onload="incrementCount(6636050855001)">
 
   <!-- COVID Banner -->
   <!--div class="container-fluid">
@@ -111,8 +111,9 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
               <a class="dropdown-item" href="about.html">About Us</a>
-              <a class="dropdown-item" href="clients.html">Clients</a>
-              <a class="dropdown-item" href="vet.html">Veteran Owned</a>
+              <a class="dropdown-item" href="resources.html">Additional Resources</a>
+              <!--a class="dropdown-item" href="clients.html">Clients</a-->
+              <a class="dropdown-item" href="vet.html">Veteran Discount</a>
               <a class="dropdown-item" href="faq.html">FAQ</a>
             </div>
           </li>
@@ -187,7 +188,7 @@
     </div>
   </header>
   <!-- Page Content -->
-  <div class="container">
+  <div class="container-fluid">
     <!-- COVID banner -->
     <!-- Button trigger banner -->
     <!--div id="banner" class="banner-affixed">
@@ -217,45 +218,8 @@
       </div>
     </div>
 
-    <!-- Marketing Icons Section -->
-    <!--div class="row">
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Dog Runs</h4>
-          <div class="card-body">
-            <p class="card-text">Learn how we employ the expertly trained canine sense of our four dogs to find pests!</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Exterminating</h4>
-          <div class="card-body">
-            <p class="card-text">Learn how we effectively locate and eliminate pests from all potential hiding places!</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Trapping</h4>
-          <div class="card-body">
-            <p class="card-text">Learn how we humanely trap and relocate larger animals away from your property!</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div-->
-    <!-- /.row -->
-
     <!-- Portfolio Section -->
+    <div class="container">
     <h2>How Can We Help?</h2>
     <div class="row">
       <div class="card-group">
@@ -315,6 +279,7 @@
       </div>
       <!-- /.row -->
     </div>
+    </div>
     <!-- Features Section -->
     <!--div class="row">
       <div class="col-lg-6">
@@ -349,6 +314,41 @@
       </div>
     </div-->
 
+    <!-- Live count section -->
+    <div class="container-fluid" style="background:transparent url('https://cdn.pixabay.com/photo/2013/12/07/17/23/sunrise-224749_960_720.jpg') no-repeat center center /cover;">
+      <div class="row mb-4">
+        <div class="col-sm-12 my-auto" style="margin-bottom: 20px">
+          <h3 class="text-center">Bugs killed since 1981*</h3>
+        </div>
+        <div class="col-sm-12 my-auto" style="margin-bottom: 20px">
+          <div id="display_div_id" style="font-weight:bold; color: white; margin-bottom: 20px" class="h1 text-center">
+          </div>
+        </div>
+        <div class="col-sm-12 my-auto" style="margin-top: 20px">
+          <h3 class="text-center">*This number is an estimation, and we still feel it is low.</h3>
+        </div>
+      </div>
+      <script>
+        var count = document.getElementById("count");
+        var display_str="";
+        var display_div = document.getElementById("display_div_id");
+        var counter=0;
+
+        function incrementCount(current_count){
+          counter=current_count;
+          setInterval(function () {
+            display_div.removeChild(display_div.lastChild);
+            var new_span = document.createElement('span');
+            counter++;
+            var str_counter=counter;
+
+            var str = str_counter.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+            new_span.innerText=str;
+            display_div.appendChild(new_span);
+          }, 1000);
+        }
+      </script>
+    </div>
   </div>
 
 
@@ -607,6 +607,7 @@
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Calvert Exterminators 2020</p>
+      <a class="m-0 text-center text-white" href="credits.html">Licenses and credits</a>
     </div>
     <!-- /.container -->
   </footer>
