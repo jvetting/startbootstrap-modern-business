@@ -15,11 +15,11 @@ else
     $dbname = "calvert";
 
 // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    //$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    //if ($conn->connect_error) {
+        //die("Connection failed: " . $conn->connect_error);
+    //}
     /*
 
     $sql = "INSERT INTO tickets (ticket)
@@ -90,6 +90,7 @@ VALUES ('2020-7-13/VJ3')";
       /*----------------------------------------------------------------------------------------------------------------
        * Generate unique num for last digits of ticket and post to db
        */
+       /*
       $ticket .= "10";
       $exists = TRUE;
       $num=00;
@@ -112,10 +113,11 @@ VALUES ('2020-7-13/VJ3')";
            echo "Error: " . $sql . "<br>" . $conn->error;
        }
        $conn->close();
+       */
 
 // Create the email and send the message
       $to = 'jvetting@iastate.edu'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-      $email_subject = "Online Appointment Request: #$ticket";
+      $email_subject = "Online Appointment Request";//: #$ticket";
       $email_body = "A client has requested a service.\n\n"."Here are the details:\n\n
 Name: $name\n
 Email: $email_address\n

@@ -38,7 +38,7 @@ $(function() {
       //uid format: First initial + last intial + random num b/w 0-9 ex:'JV'
       //random num possibilites: (26^2)*10 ~ 6,760 unique combos a day
       var date = new Date();
-      var name_arr = name.split(" ");
+      var name_arr = name.split(" "); ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! THROW ERROR WHEN NO LAST NAME
       var uid = name_arr[0].substring(0,1)+name_arr[1].substring(0,1);//+(Math.floor(Math.random() * (9 - 0 + 1)) + 0);
       var ticket = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+"/"+uid;
       console.log(ticket);

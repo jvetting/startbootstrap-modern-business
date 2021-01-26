@@ -16,6 +16,12 @@ body {
   background-color: #1D5171;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 p {
   color: white;
 }
