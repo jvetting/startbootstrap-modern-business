@@ -76,7 +76,7 @@ VALUES ('2020-7-13/VJ3')";
       $email_address = strip_tags(htmlspecialchars($_POST['email']));
       $phone = strip_tags(htmlspecialchars($_POST['phone']));
       $address_line1 = strip_tags(htmlspecialchars($_POST['address_line1']));
-      $address_line2 = "";
+      $address_line2 = strip_tags(htmlspecialchars($_POST['address_line2']));
       if(!empty($_POST['address_line2'])){$address_line2 = strip_tags(htmlspecialchars($_POST['address_line2']));}
       $city = strip_tags(htmlspecialchars($_POST['city']));
       $region = strip_tags(htmlspecialchars($_POST['region']));
@@ -117,7 +117,7 @@ VALUES ('2020-7-13/VJ3')";
 
 // Create the email and send the message
       $to = 'jvetting@iastate.edu'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-      $email_subject = "Online Appointment Request";//: #$ticket";
+      $email_subject = "[Online Appointment Request]: " . $ticket;
       $email_body = "A client has requested a service.\n\n"."Here are the details:\n\n
 Name: $name\n
 Email: $email_address\n

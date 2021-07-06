@@ -31,7 +31,7 @@ $(function() {
       console.log(postal_code);
       console.log(exists);
       console.log(type);
-      console.log(confirmation);
+      //console.log(confirmation);
       console.log(reply);
 
       //Ticket format: year-month-day/short_uid
@@ -39,13 +39,15 @@ $(function() {
       //random num possibilites: (26^2)*10 ~ 6,760 unique combos a day
       var date = new Date();
       var name_arr = name.split(" "); ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! THROW ERROR WHEN NO LAST NAME
-      var uid = name_arr[0].substring(0,1)+name_arr[1].substring(0,1);//+(Math.floor(Math.random() * (9 - 0 + 1)) + 0);
-      var ticket = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+"/"+uid;
+      var uid = name_arr[0].substring(0,1);//+name_arr[1].substring(0,1);//+(Math.floor(Math.random() * (9 - 0 + 1)) + 0);
+      if(name_arr.length > 1) uid = name_arr[0].substring(0,1)+name_arr[name_arr.length-1].substring(0,1);
+      var ticket = uid+"."+(date.getMonth()+1)+"."+date.getDate()+"."+date.getFullYear();
       console.log(ticket);
 
       //var message = header + $("textarea#message").val();//$("textarea#message").val();
       //----------------------------------------------------------------------------------------------------------------
       var message = $("textarea#message").val();
+      if(!message) message = "No additional notes."
       console.log(message);
       var firstName = name; // For Success/Failure Message
       // Check for white space in name for Success/Fail message
@@ -75,7 +77,7 @@ $(function() {
           phone: phone,
           email: email,
           address_line1: address_line1,
-          //address_line2: address_line2,
+          address_line2: address_line2,
           city: city,
           region: region,
           postal_code: postal_code,

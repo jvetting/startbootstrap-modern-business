@@ -34,15 +34,11 @@
   <component name="ChangeListManager">
     <list default="true" id="07bd90fa-c4c8-409a-967d-e1636b757089" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dog-runs.html" beforeDir="false" afterPath="$PROJECT_DIR$/dog-runs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/modern-business.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/modern-business.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pest-control.html" beforeDir="false" afterPath="$PROJECT_DIR$/pest-control.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vet.html" beforeDir="false" afterPath="$PROJECT_DIR$/vet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/contact_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/contact_me.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail/contact_me.php" beforeDir="false" afterPath="$PROJECT_DIR$/mail/contact_me.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +78,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CS classes/CS 342/hw0-framework-setup" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -159,7 +155,14 @@
       <workItem from="1611694809746" duration="5797000" />
       <workItem from="1611787105147" duration="2539000" />
       <workItem from="1611860457921" duration="7904000" />
-      <workItem from="1612203534380" duration="7579000" />
+      <workItem from="1612203534380" duration="8398000" />
+      <workItem from="1612295472169" duration="684000" />
+      <workItem from="1612388137748" duration="3770000" />
+      <workItem from="1612484967933" duration="3000" />
+      <workItem from="1612823434010" duration="23000" />
+      <workItem from="1612993295416" duration="3000" />
+      <workItem from="1613429304672" duration="51000" />
+      <workItem from="1625599350586" duration="679000" />
     </task>
     <servers />
   </component>
@@ -185,37 +188,29 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611696577258">
+    <state width="2517" height="399" key="GridCell.Tab.0.bottom" timestamp="1625599897909">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-1920.369.1920.1040@0.0.2560.1400" timestamp="1611696577258" />
-    <state width="1234" height="399" key="GridCell.Tab.0.bottom" timestamp="1612206848072">
+    <state width="2517" height="399" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.795.1920.1040/2560.0.1920.1040@0.0.2560.1400" timestamp="1625599897909" />
+    <state width="2517" height="399" key="GridCell.Tab.0.center" timestamp="1625599897909">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="399" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.369.1920.1040@0.0.2560.1400" timestamp="1612206848072" />
-    <state width="1234" height="399" key="GridCell.Tab.0.center" timestamp="1612206848072">
+    <state width="2517" height="399" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.795.1920.1040/2560.0.1920.1040@0.0.2560.1400" timestamp="1625599897909" />
+    <state width="2517" height="399" key="GridCell.Tab.0.left" timestamp="1625599897909">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="399" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.369.1920.1040@0.0.2560.1400" timestamp="1612206848072" />
-    <state width="1234" height="399" key="GridCell.Tab.0.left" timestamp="1612206848072">
+    <state width="2517" height="399" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.795.1920.1040/2560.0.1920.1040@0.0.2560.1400" timestamp="1625599897909" />
+    <state width="2517" height="399" key="GridCell.Tab.0.right" timestamp="1625599897909">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="399" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.369.1920.1040@0.0.2560.1400" timestamp="1612206848072" />
-    <state width="1234" height="399" key="GridCell.Tab.0.right" timestamp="1612206848072">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1234" height="399" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.369.1920.1040@0.0.2560.1400" timestamp="1612206848072" />
-    <state x="1583" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1612209197860">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1583" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.369.1920.1040@0.0.2560.1400" timestamp="1612209197860" />
+    <state width="2517" height="399" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.795.1920.1040/2560.0.1920.1040@0.0.2560.1400" timestamp="1625599897909" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/contact_me.js</url>
-          <line>106</line>
+          <line>108</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
